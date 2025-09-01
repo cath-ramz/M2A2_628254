@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario</title>
+</head>
+<style>
+    body {
+      text-align: left;
+    }
+</style>
+<body>
+    <h1> 
+        Registro para un Torneo de Videojuegos 
+    </h1>
+    <form>
+        <table border="1" cellpadding="10">
+
+        <tr>
+            <th> <label for="nombre">Nombre del jugador:</label> </th>
+            <th>
+                <input type="text" id="nombre"  name="nombre" minlength="3" maxlength="15" required>
+                
+            </th>
+        </tr>
+
+        <tr>
+            <th> <label for="correo">Correo: </label> </th>
+            <th> 
+                <input type="email" id="correo" name="correo" required> 
+                
+            </th>
+        </tr>
+
+        <tr>
+            <th> <label for="edad">Edad:</label> </th>
+            <th>
+                <input type="number" id="edad" min="12" max="40"  name="edad" required > 
+                
+            </th>
+        </tr>
+
+        <tr> 
+            <th> <label for="nickname">Nickname:</label> </th>
+            <th> 
+                <input type="text" id="nickname" name="nickname" pattern="[A-Za-z0-9]+" title="Solo letras y números">
+                
+            </th>
+        </tr>
+
+        <tr>
+            <th> Categoría: </th>
+            <th > 
+                <input type="radio" id="principiante" name="categoria" value="Principiante"required>
+                <label for="principiante">Principiante</label>
+
+                <input type="radio" id="intermedio" name="categoria" value="Intermedio"required>
+                <label for="intermedio">Intermedio</label>
+
+                <input type="radio" id="experto" name="categoria" value="Experto" required>
+                <label for="experto">Experto</label>
+            </th>
+        </tr>
+        
+        <tr>
+            <th> Juegos favoritos: </th>
+            <th> 
+                <input type="checkbox" id="FIFA" name="juego" value="FIFA">
+                <label for="FIFA">FIFA</label>
+
+                <input type="checkbox" id="LOL" name="juego" value="LOL">
+                <label for="LOL">LOL</label>
+
+                <input type="checkbox" id="Minecraft" name="juego" value="Minecraft" >
+                <label for="Minecraft">Minecraft</label> 
+            </th>
+        </tr>
+
+        <tr>
+            <th> <label for="fecha"> Fecha inscripción: </label> </th>
+            <th>  
+                <input type="date" id="fecha" name="fecha" min="2025-01-01" max="2025-12-31">
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: center;">
+                <button type="submit">
+                    Enviar
+                </button>
+                 <button type="reset">
+                    Restablecer
+                </button>
+            </th>
+        </tr>
+        </table>
+    </form>
+
+
+
+</body>
+</html>
